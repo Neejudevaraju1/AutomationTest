@@ -3,9 +3,7 @@ package automation;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByClassName;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,8 +30,8 @@ public class UnitManagement extends Base {
 		permissionFor.click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("select2-selection__arrow")));
 		
-		Select permission=new Select(permissionFor);
-		permission.selectByIndex(4);
+		//Select permission=new Select(permissionFor);
+	   //permission.selectByIndex(4);
 	}
 
 	public static void main(String[] args) throws InterruptedException {
