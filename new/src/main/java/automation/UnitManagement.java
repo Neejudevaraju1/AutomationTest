@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class UnitManagement extends Base {
+/*public class UnitManagement extends LoginPage {
 	
 	public void unitManagement() {
 		WebElement module=driver.findElement(By.xpath("//a[@href='/seepz/goToModule/UM']"));
@@ -43,4 +43,4 @@ public class UnitManagement extends Base {
 
 	}
 
-}
+}*/

@@ -2,60 +2,60 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-10T12:26:53 IST" name="Default suite" finished-at="2025-07-10T12:27:15 IST" duration-ms="21866">
+  <suite started-at="2025-07-11T13:27:04 IST" name="Suite" finished-at="2025-07-11T13:27:26 IST" duration-ms="22026">
     <groups>
     </groups>
-    <test started-at="2025-07-10T12:26:53 IST" name="Default test" finished-at="2025-07-10T12:27:15 IST" duration-ms="21866">
+    <test started-at="2025-07-11T13:27:04 IST" name="Test" finished-at="2025-07-11T13:27:26 IST" duration-ms="22026">
       <class name="testscript.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:26:53 IST" name="beforeMethod" finished-at="2025-07-10T12:26:59 IST" duration-ms="6176" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:04 IST" name="beforeMethod" finished-at="2025-07-11T13:27:10 IST" duration-ms="6381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:26:59 IST" name="loginWithInvalidCredentials" finished-at="2025-07-10T12:27:00 IST" duration-ms="460" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:10 IST" name="loginWithInvalidCredentials" finished-at="2025-07-11T13:27:10 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:00 IST" name="afterMethod" finished-at="2025-07-10T12:27:01 IST" duration-ms="579" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:10 IST" name="afterMethod" finished-at="2025-07-11T13:27:11 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:01 IST" name="beforeMethod" finished-at="2025-07-10T12:27:05 IST" duration-ms="4125" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:11 IST" name="beforeMethod" finished-at="2025-07-11T13:27:15 IST" duration-ms="4618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:05 IST" name="loginWithInvalidUsernameAndValidPassword" finished-at="2025-07-10T12:27:05 IST" duration-ms="456" status="PASS">
+        <test-method signature="loginWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:15 IST" name="loginWithInvalidUsernameAndValidPassword" finished-at="2025-07-11T13:27:16 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:05 IST" name="afterMethod" finished-at="2025-07-10T12:27:06 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:16 IST" name="afterMethod" finished-at="2025-07-11T13:27:16 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:06 IST" name="beforeMethod" finished-at="2025-07-10T12:27:09 IST" duration-ms="3950" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:16 IST" name="beforeMethod" finished-at="2025-07-11T13:27:20 IST" duration-ms="3993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:09 IST" name="loginWithValidCredentials" finished-at="2025-07-10T12:27:10 IST" duration-ms="386" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:20 IST" name="loginWithValidCredentials" finished-at="2025-07-11T13:27:20 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:10 IST" name="afterMethod" finished-at="2025-07-10T12:27:10 IST" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:21 IST" name="afterMethod" finished-at="2025-07-11T13:27:21 IST" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:10 IST" name="beforeMethod" finished-at="2025-07-10T12:27:14 IST" duration-ms="3908" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:21 IST" name="beforeMethod" finished-at="2025-07-11T13:27:25 IST" duration-ms="4034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:14 IST" name="loginWithValidUsernameAndInvalidPassword" finished-at="2025-07-10T12:27:15 IST" duration-ms="417" status="PASS">
+        <test-method signature="loginWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:25 IST" name="loginWithValidUsernameAndInvalidPassword" finished-at="2025-07-11T13:27:25 IST" duration-ms="383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-10T12:27:15 IST" name="afterMethod" finished-at="2025-07-10T12:27:15 IST" duration-ms="487" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@53fb3dab]" started-at="2025-07-11T13:27:25 IST" name="afterMethod" finished-at="2025-07-11T13:27:26 IST" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
