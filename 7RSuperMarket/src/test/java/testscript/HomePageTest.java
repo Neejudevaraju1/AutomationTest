@@ -1,0 +1,18 @@
+package testscript;
+
+import org.testng.annotations.Test;
+
+import pages.HomePage;
+import pages.LoginPage;
+
+public class HomePageTest extends Base {
+  @Test
+  public void verifyThatTheAdminLinkIsClickable() {
+	  LoginPage loginpage=new LoginPage(driver);
+	  HomePage homepage=new HomePage(driver);
+	  loginpage.enterUsernameAndPassword("admin","admin");
+	  loginpage.clickSiginButton();
+	  homepage.clickAdminLink();
+	  homepage.clickLogoutLink();
+  }
+}

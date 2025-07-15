@@ -9,7 +9,7 @@ public class LoginTest extends Base {
   @Test(dataProvider = "credentials")
   public void enterUsernameAndPassword(String username,String password) {
 	  LoginPage loginpage= new LoginPage(driver);
-	 // loginpage.clickUser();
+	//  loginpage.clickUser();
 	  loginpage.usernameAndPassword(username, password);
 	  loginpage.loginButton();
 	System.out.println(driver.getTitle());
