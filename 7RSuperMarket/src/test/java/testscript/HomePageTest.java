@@ -1,5 +1,6 @@
 package testscript;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -14,5 +15,8 @@ public class HomePageTest extends Base {
 	  loginpage.clickSiginButton();
 	  homepage.clickAdminLink();
 	  homepage.clickLogoutLink();
+	  String expected="Dashboard | 7rmart supermarket";
+	  String actual="Dashboard | 7rmart supermarket";
+	  Assert.assertEquals(actual, expected, "unable to login");
   }
 }

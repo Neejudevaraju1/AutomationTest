@@ -1,5 +1,6 @@
 package testscript;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.AdminUserPage;
@@ -17,5 +18,7 @@ public class AdminUserPageTest extends Base{
 	  adminuser.enterUserNameAndPassword("jobin", "Jobi12@");
 	  adminuser.selectUserType("admin");
 	  adminuser.clickSaveButton();
+	  boolean isAlertDisplayed= adminuser.isAlertIsDisplayed();
+	  Assert.assertTrue(isAlertDisplayed, "Unable to save the admin information");
   }
 }

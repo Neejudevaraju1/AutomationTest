@@ -14,6 +14,8 @@ public LoginPage(WebDriver driver) {
 @FindBy(xpath="//input[@name='username']")WebElement username;
 @FindBy(xpath="//input[@name='password']")WebElement password;
 @FindBy(xpath="//button[@type='submit']")WebElement signinbutton;
+@FindBy(xpath="//p[text()='Dashboard']")WebElement dashboard;
+@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alertmessage;
  
 public void enterUsernameAndPassword(String usernamefield,String passwordfield) {
 	username.sendKeys(usernamefield);
@@ -21,5 +23,13 @@ public void enterUsernameAndPassword(String usernamefield,String passwordfield) 
 }
 public void clickSiginButton() {
 	signinbutton.click();
+}
+public boolean isDashboardIsDisplayed() {
+	
+	return dashboard.isDisplayed();
+}
+public boolean isAlertMessageIsDisplayed() {
+	
+	return alertmessage.isDisplayed();
 }
 }

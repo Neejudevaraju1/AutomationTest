@@ -20,6 +20,7 @@ public AdminUserPage(WebDriver driver) {
 @FindBy(xpath="//input[@id='password']")WebElement pass;
 @FindBy(xpath="//select[@id='user_type']")WebElement usertype;
 @FindBy(xpath="(//button[@type='submit'])[2]")WebElement saveButton;
+@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
 
 public void clickMoreInfo() {
 	
@@ -42,5 +43,8 @@ public void selectUserType(String user_Type) {
 public void clickSaveButton() {
 	
 	saveButton.click();
+}
+public boolean isAlertIsDisplayed() {
+	return alert.isDisplayed();
 }
 }
