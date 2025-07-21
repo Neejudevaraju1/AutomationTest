@@ -2,6 +2,8 @@ package testscript;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import constants.Constant;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 
@@ -17,6 +19,6 @@ public class ManageNewPageTest extends Base {
 	  managenews.enterNewsToTheField(" Welcome to the world NEWS");
 	  managenews.clickSaveButton();
 	  boolean isAlertDisplayed= managenews.isAlertIsDiplayedAfterSaving();
-	  Assert.assertTrue(isAlertDisplayed, "UNABLE TO SAVE NEWS");
+	  Assert.assertTrue(isAlertDisplayed,Constant.ERROR_MESSAGE_UNABLE_TO_SAVE_NEWS );
   }
 }
