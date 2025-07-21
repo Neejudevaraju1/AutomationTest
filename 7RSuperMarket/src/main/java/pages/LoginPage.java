@@ -5,8 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import pageutilities.WaitUtility;
+
 public class LoginPage {
 WebDriver driver;
+WaitUtility utility=new WaitUtility();
 public LoginPage(WebDriver driver) {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
@@ -22,6 +25,7 @@ public void enterUsernameAndPassword(String usernamefield,String passwordfield) 
 	password.sendKeys(passwordfield);
 }
 public void clickSiginButton() {
+	utility.waitForElementToBeClicked(driver, signinbutton);
 	signinbutton.click();
 }
 public boolean isDashboardIsDisplayed() {

@@ -6,8 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import pageutilities.PageUtilities;
+
 public class AdminUserPage {
 WebDriver driver;
+PageUtilities utility=new PageUtilities();
+
 public AdminUserPage(WebDriver driver) {
 	
 	this.driver =driver;
@@ -37,8 +41,7 @@ public void enterUserNameAndPassword(String user, String passwd) {
 }
 public void selectUserType(String user_Type) {
 	
-	Select select=new Select(usertype);
-	select.selectByValue(user_Type);;
+	utility.selectFromDropDown_ByValue(usertype, user_Type);
 }
 public void clickSaveButton() {
 	
