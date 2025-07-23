@@ -5,17 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import pageutilities.JavaScriptUtilities;
+
 import pageutilities.PageUtilities;
 
 public class ManageNewsPage {
 WebDriver driver;
-PageUtilities utility;
+PageUtilities utility=new PageUtilities();
 
 public ManageNewsPage(WebDriver driver) {
 	this.driver=driver;
 	PageFactory.initElements(driver,this);
-	utility=new PageUtilities(driver);
+	
 }
 @FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'])[2]")WebElement moreInfo;
 @FindBy(xpath="//a[@onclick='click_button(1)']")WebElement newButton;

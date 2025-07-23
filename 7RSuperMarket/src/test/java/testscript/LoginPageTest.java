@@ -1,40 +1,51 @@
 package testscript;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constants.Constant;
 import pages.LoginPage;
+import pageutilities.ExcelUtility;
 
 public class LoginPageTest extends Base{
   @Test
-  public void verifyUserCanLoginWithValidCredentials() {
+  public void verifyUserCanLoginWithValidCredentials() throws IOException {
 	  LoginPage loginpage=new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("admin", "admin");
+	  String userName=ExcelUtility.readStringData(1, 0, "Login_Page");
+	  String password=ExcelUtility.readStringData(1, 1, "Login_Page");
+	  loginpage.enterUsernameAndPassword(userName,password);
 	  loginpage.clickSiginButton();
 	  boolean isdashboarddisplayed=loginpage.isDashboardIsDisplayed();
 	  Assert.assertTrue(isdashboarddisplayed,Constant.ERROR_MESSAGE_FOR_LOGIN_FAIL);
   }
   @Test
-  public void verifyUserCanLoginWithValidUsernameAndInvalidPassword() {
+  public void verifyUserCanLoginWithValidUsernameAndInvalidPassword() throws IOException {
 	  LoginPage loginpage=new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("admin", "test");
+	  String userName=ExcelUtility.readStringData(2, 0, "Login_Page");
+	  String password=ExcelUtility.readStringData(2, 1, "Login_Page");
+	  loginpage.enterUsernameAndPassword(userName,password);
 	  loginpage.clickSiginButton();
 	  boolean isalertdisplayed=loginpage.isAlertMessageIsDisplayed();
 	  Assert.assertTrue(isalertdisplayed, Constant.ERROR_MESSAGE_LOGIN_WITH_INVALID_CREDENTIALS);
   }
   @Test
-  public void VerifyUserCanLoginWithInvalidUsernameAndValidPassword() {
+  public void VerifyUserCanLoginWithInvalidUsernameAndValidPassword() throws IOException {
 	  LoginPage loginpage=new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("test", "admin");
+	  String userName=ExcelUtility.readStringData(3, 0, "Login_Page");
+	  String password=ExcelUtility.readStringData(3, 1, "Login_Page");
+	  loginpage.enterUsernameAndPassword(userName, password);
 	  loginpage.clickSiginButton();
 	  boolean isalertdisplayed=loginpage.isAlertMessageIsDisplayed();
 	  Assert.assertTrue(isalertdisplayed, Constant.ERROR_MESSAGE_LOGIN_WITH_INVALID_CREDENTIALS);
   }
   @Test
-  public void verifyUserCanLoginWithInvalidCredentials() {
+  public void verifyUserCanLoginWithInvalidCredentials() throws IOException {
 	  LoginPage loginpage=new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("test","pass");
+	  String userName=ExcelUtility.readStringData(3, 0, "Login_Page");
+	  String password=ExcelUtility.readStringData(3, 1, "Login_Page");
+	  loginpage.enterUsernameAndPassword(userName,password);
 	  loginpage.clickSiginButton();
 	  boolean isalertdisplayed=loginpage.isAlertMessageIsDisplayed();
 	  Assert.assertTrue(isalertdisplayed,Constant.ERROR_MESSAGE_LOGIN_WITH_INVALID_CREDENTIALS);

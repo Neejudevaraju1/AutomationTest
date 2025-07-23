@@ -10,13 +10,13 @@ import pageutilities.PageUtilities;
 
 public class AdminUserPage {
 WebDriver driver;
-PageUtilities utility;
+PageUtilities utility=new PageUtilities();
 
 public AdminUserPage(WebDriver driver) {
 	
 	this.driver =driver;
 	PageFactory.initElements(driver, this);
-	utility=new PageUtilities(driver);
+	
 }
 
 @FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]") WebElement admin_moreInfo;

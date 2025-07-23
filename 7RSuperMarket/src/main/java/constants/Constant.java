@@ -10,4 +10,6 @@ public static final String ERROR_MESSAGE_UNABLE_TO_LOGOUT="unable to logout from
 public static final String ERROR_MESSAGE_UNABLE_TO_SAVE_USER_INFO="Unable to save the admin information";
 
 public static final String ERROR_MESSAGE_UNABLE_TO_SAVE_NEWS="UNABLE TO SAVE NEWS";
+
+public static final String TEST_DATA=System.getProperty("user.dir")+"//src//main//resources//Test_Data.xlsx";
 }
