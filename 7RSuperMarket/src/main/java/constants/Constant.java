@@ -11,5 +11,7 @@ public static final String ERROR_MESSAGE_UNABLE_TO_SAVE_USER_INFO="Unable to sav
 
 public static final String ERROR_MESSAGE_UNABLE_TO_SAVE_NEWS="UNABLE TO SAVE NEWS";
 
+public static final String ERROR_MESSAGE_SEARCH_FAIL="Search result displayed is incorrect";
+
 public static final String TEST_DATA=System.getProperty("user.dir")+"//src//main//resources//Test_Data.xlsx";
 }

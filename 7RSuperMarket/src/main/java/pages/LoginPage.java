@@ -24,9 +24,10 @@ public void enterUsernameAndPassword(String usernamefield,String passwordfield) 
 	username.sendKeys(usernamefield);
 	password.sendKeys(passwordfield);
 }
-public void clickSiginButton() {
+public HomePage clickSiginButton() {
 	utility.waitForElementToBeClicked(driver, signinbutton);
 	signinbutton.click();
+	return new HomePage(driver);
 }
 public boolean isDashboardIsDisplayed() {
 	
