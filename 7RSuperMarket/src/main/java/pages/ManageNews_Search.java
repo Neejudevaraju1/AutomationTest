@@ -36,7 +36,6 @@ public boolean isSearchResultDisplayed(String input) {
 	
 List<WebElement> datatable=driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td"));
 for (WebElement data:datatable) {
-	
 	if(data.getText().contains(input)) {
 		return true	; 
 }
