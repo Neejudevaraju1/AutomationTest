@@ -25,7 +25,7 @@ public class ManageNews_SearchTest extends Base {
 	  homepage=login.clickSiginButton();
 	  managenews=homepage.clickMoreInfoOfNews();
 	  managesearch=managenews.clickOnSearchIcon();
-	  String addDetail=ExcelUtility.readStringData(1, 0, "News");
+	  String addDetail=ExcelUtility.readStringData(0, 0, "Search");
 	 
 	  managesearch.addDetails(addDetail).clickOnSearchButton();
 	  boolean actualResult = managesearch.isSearchResultDisplayed(addDetail);

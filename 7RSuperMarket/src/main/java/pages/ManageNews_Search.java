@@ -21,7 +21,7 @@ public ManageNews_Search(WebDriver driver) {
 
 @FindBy(xpath="//input[@class='form-control']")WebElement addTitle;
 @FindBy(xpath="//i[@class='fa fa-search']")WebElement searchButton;
-@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']") WebElement table;
+@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td") WebElement table;
 
 public ManageNews_Search addDetails(String title) {
 	addTitle.sendKeys(title);
@@ -34,10 +34,11 @@ public ManageNews_Search clickOnSearchButton() {
 }
 public boolean isSearchResultDisplayed(String input) {
 	
-List<WebElement> datatable=driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td[1]"));
+List<WebElement> datatable=driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td"));
 for (WebElement data:datatable) {
-	if(data.getText().equalsIgnoreCase(input)) {
-		return true; 
+	
+	if(data.getText().contains(input)) {
+		return true	; 
 }
 }
 return false;
