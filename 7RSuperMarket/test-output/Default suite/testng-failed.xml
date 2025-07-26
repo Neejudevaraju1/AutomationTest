@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.ManageNews_SearchTest">
+      <class name="testscript.ManageCategoryTest">
         <methods>
           <include name="beforeMethod"/>
+          <include name="verifyThatTheUserIsAbleToAddNewCategory"/>
           <include name="afterMethod"/>
-          <include name="verifyThatTheSearchFunctionalityIsWorking"/>
         </methods>
-      </class> <!-- testscript.ManageNews_SearchTest -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

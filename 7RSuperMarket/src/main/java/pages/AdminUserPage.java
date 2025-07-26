@@ -26,7 +26,7 @@ public AdminUserPage(WebDriver driver) {
 @FindBy(xpath="//select[@id='user_type']")WebElement usertype;
 @FindBy(xpath="(//button[@type='submit'])[2]")WebElement saveButton;
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-
+@FindBy(xpath="//a[@onclick='click_button(2)']")WebElement adminSearch;
 
 public AdminUserPage clickNewButton() {
 	
@@ -51,5 +51,9 @@ public AdminUserPage clickSaveButton() {
 }
 public boolean isAlertIsDisplayed() {
 	return alert.isDisplayed();
+}
+public AdminUser_SearchPage clickOnAdminSearcIcon() {
+	adminSearch.click();
+	return new AdminUser_SearchPage(driver);
 }
 }

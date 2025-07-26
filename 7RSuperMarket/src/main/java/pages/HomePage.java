@@ -19,7 +19,7 @@ public HomePage(WebDriver driver) {
 // clicking more info of Admin because the action is done from home page
 @FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]") WebElement admin_moreInfo; //more info of admin card
 @FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'])[2]")WebElement moreInfo;// more info of news card
-
+@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category'])[2]")WebElement moreInfoCategory;
 public HomePage clickAdminLink() {
 	adminLink.click();
 	return this;
@@ -42,5 +42,9 @@ public ManageNewsPage clickMoreInfoOfNews() {
 //	utility.scrollIntoView(moreInfo);
 	moreInfo.click();
 	return new ManageNewsPage(driver);
+}
+public ManageCategory clickMoreInfoCategory() {
+	moreInfoCategory.click();
+	return new ManageCategory(driver);
 }
 }

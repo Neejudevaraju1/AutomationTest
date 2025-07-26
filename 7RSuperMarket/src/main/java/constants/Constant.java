@@ -13,5 +13,9 @@ public static final String ERROR_MESSAGE_UNABLE_TO_SAVE_NEWS="UNABLE TO SAVE NEW
 
 public static final String ERROR_MESSAGE_SEARCH_FAIL="Search result displayed is incorrect";
 
+public static final String ERROR_MESSAGE_ADMIN_SEARCH_FAIL="Search result of the admin functionality is incorrect";
+
 public static final String TEST_DATA=System.getProperty("user.dir")+"//src//main//resources//Test_Data.xlsx";
+
+public static final String TEST_PIC=System.getProperty("user.dir")+"//src//main//resources//Ring.jpg";
 }
