@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  ExtendReport</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>ExtendReport</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 29 17:13:30 IST 2025</td>
+<td>Started on:</td><td>Tue Jul 29 14:13:15 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25575 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44614 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -83,12 +83,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e839995b2116c4323e05a184a308ea3f, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\NEEJUD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57029}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57029/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e839995b2116c4323e05a184a308ea3f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [d720b3b9c2df66cdf495ac4bf0010299, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\NEEJUD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51951/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d720b3b9c2df66cdf495ac4bf0010299
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -102,45 +99,20 @@ Session ID: e839995b2116c4323e05a184a308ea3f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at pages.AdminUserPage.isAlertIsDisplayed(AdminUserPage.java:72)
-	at testscript.AdminUserPageTest.verifyThatTheUserCanSaveAdminUserInformations(AdminUserPageTest.java:32)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at pages.AdminUserPage.isAlertIsDisplayed(AdminUserPage.java:53)
+	at testscript.AdminUserPageTest.verifyThatTheUserCanSaveAdminUserInformations(AdminUserPageTest.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1904720585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1904720585'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006112337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006112337'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
   (Session info: chrome=138.0.7204.169)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e839995b2116c4323e05a184a308ea3f, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\NEEJUD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57029}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57029/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e839995b2116c4323e05a184a308ea3f
+Command: [d720b3b9c2df66cdf495ac4bf0010299, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\NEEJUD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51951/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d720b3b9c2df66cdf495ac4bf0010299
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -157,9 +129,9 @@ Session ID: e839995b2116c4323e05a184a308ea3f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at pages.AdminUserPage.isAlertIsDisplayed(AdminUserPage.java:72)
-	at testscript.AdminUserPageTest.verifyThatTheUserCanSaveAdminUserInformations(AdminUserPageTest.java:32)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at pages.AdminUserPage.isAlertIsDisplayed(AdminUserPage.java:53)
+	at testscript.AdminUserPageTest.verifyThatTheUserCanSaveAdminUserInformations(AdminUserPageTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -187,8 +159,8 @@ Session ID: e839995b2116c4323e05a184a308ea3f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>testscript.AdminUserPageTest@15043a2f</td></tr>
+<td>11</td>
+<td>testscript.AdminUserPageTest@7e3181aa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -199,15 +171,50 @@ Session ID: e839995b2116c4323e05a184a308ea3f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.AdminUserPageTest.verifyThatTheUserCanSaveAlreadyExistingAdminUserInfo()'><b>verifyThatTheUserCanSaveAlreadyExistingAdminUserInfo</b><br>Test class: testscript.AdminUserPageTest</td>
+<td title='testscript.LoginPageTest.verifyUserCanLoginWithInvalidCredentials()'><b>verifyUserCanLoginWithInvalidCredentials</b><br>Test class: testscript.LoginPageTest</td>
 <td></td>
-<td>2</td>
-<td>testscript.AdminUserPageTest@15043a2f</td></tr>
+<td>0</td>
+<td>testscript.LoginPageTest@6f3c660a</td></tr>
 <tr>
-<td title='testscript.AdminUserPageTest.verifyUserCanSaveAdminInfoWithoutUserName()'><b>verifyUserCanSaveAdminInfoWithoutUserName</b><br>Test class: testscript.AdminUserPageTest</td>
+<td title='testscript.ManageNews_SearchTest.verifyThatTheSearchFunctionalityIsWorking()'><b>verifyThatTheSearchFunctionalityIsWorking</b><br>Test class: testscript.ManageNews_SearchTest</td>
 <td></td>
 <td>1</td>
-<td>testscript.AdminUserPageTest@15043a2f</td></tr>
+<td>testscript.ManageNews_SearchTest@331acdad</td></tr>
+<tr>
+<td title='testscript.AdminUser_SearchTest.verifyThatUserIsAbleToSearchAdminUser()'><b>verifyThatUserIsAbleToSearchAdminUser</b><br>Test class: testscript.AdminUser_SearchTest</td>
+<td></td>
+<td>1</td>
+<td>testscript.AdminUser_SearchTest@253d9f73</td></tr>
+<tr>
+<td title='testscript.ManageNewPageTest.verifyThatTheUserCanSaveNews()'><b>verifyThatTheUserCanSaveNews</b><br>Test class: testscript.ManageNewPageTest</td>
+<td></td>
+<td>1</td>
+<td>testscript.ManageNewPageTest@142269f2</td></tr>
+<tr>
+<td title='testscript.LoginPageTest.verifyUserCanLoginWithValidUsernameAndInvalidPassword()'><b>verifyUserCanLoginWithValidUsernameAndInvalidPassword</b><br>Test class: testscript.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testscript.LoginPageTest@6f3c660a</td></tr>
+<tr>
+<td title='testscript.LoginPageTest.VerifyUserCanLoginWithInvalidUsernameAndValidPassword()'><b>VerifyUserCanLoginWithInvalidUsernameAndValidPassword</b><br>Test class: testscript.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testscript.LoginPageTest@6f3c660a</td></tr>
+<tr>
+<td title='testscript.HomePageTest.verifyThatTheAdminLinkIsClickable()'><b>verifyThatTheAdminLinkIsClickable</b><br>Test class: testscript.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>testscript.HomePageTest@2250b9f2</td></tr>
+<tr>
+<td title='testscript.LoginPageTest.verifyUserCanLoginWithValidCredentials()'><b>verifyUserCanLoginWithValidCredentials</b><br>Test class: testscript.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testscript.LoginPageTest@6f3c660a</td></tr>
+<tr>
+<td title='testscript.ManageCategoryTest.verifyThatTheUserIsAbleToAddNewCategory()'><b>verifyThatTheUserIsAbleToAddNewCategory</b><br>Test class: testscript.ManageCategoryTest</td>
+<td></td>
+<td>1</td>
+<td>testscript.ManageCategoryTest@41d426b5</td></tr>
 </table><p>
 </body>
 </html>
