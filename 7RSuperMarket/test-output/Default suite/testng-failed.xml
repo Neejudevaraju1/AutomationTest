@@ -5,7 +5,7 @@
     <classes>
       <class name="testscript.AdminUserPageTest">
         <methods>
-          <include name="verifyThatTheUserCanSaveAdminUserInformations"/>
+          <include name="verifyUserCanSaveAdminInfoWithoutPassword"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>

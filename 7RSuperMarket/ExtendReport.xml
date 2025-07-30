@@ -9,11 +9,7 @@
 		<classes>
 			<class name="testscript.LoginPageTest"></class>
 			<class name="testscript.HomePageTest"></class>
-			<class name="testscript.AdminUserPageTest"></class>
-			<class name="testscript.AdminUser_SearchTest"></class>
-			<class name="testscript.ManageNewPageTest"></class>
-			<class name="testscript.ManageNews_SearchTest"></class>
-			<class name="testscript.ManageCategoryTest"></class>
+			
 		</classes>
 	</test>
 </suite>

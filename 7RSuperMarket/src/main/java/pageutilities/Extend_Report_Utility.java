@@ -11,7 +11,8 @@ public class Extend_Report_Utility {
 		reporter.config().setReportName("SevenRMartSuperMarket");
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("organization", "Obsqura");
-		extentReports.setSystemInfo("Name", "Athira");
+		extentReports.setSystemInfo("Name", "Neeju Devaraju");
+		extentReports.setSystemInfo("URL", "https://groceryapp.uniqassosiates.com/admin/login");
 		return extentReports;
 	}
 }

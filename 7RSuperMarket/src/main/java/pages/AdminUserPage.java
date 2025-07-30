@@ -82,5 +82,10 @@ public class AdminUserPage {
 		String tooltip = username.getAttribute("validationMessage");
 		return tooltip;
 	}
-
+//validation for password check
+	public boolean isDataValidationForPasswordDisplayed() {
+		String tooltip="Please fill in this field.";
+		String message=pass.getAttribute("validationMessage");
+		return message.equals(tooltip);
+	}
 }
