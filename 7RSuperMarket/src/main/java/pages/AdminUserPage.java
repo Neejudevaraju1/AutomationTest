@@ -66,8 +66,8 @@ public class AdminUserPage {
 		return new AdminUser_SearchPage(driver);
 	}
 
-//assertion for the conditions that are checked against the admin user information 
-//data added success alert
+    //assertion for the conditions that are checked against the admin user information 
+    //data added success alert
 	public boolean isAlertIsDisplayed() {
 		return alert.isDisplayed();
 	}

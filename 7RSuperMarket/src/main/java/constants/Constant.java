@@ -22,4 +22,7 @@ public class Constant {
 	public static final String TEST_DATA = System.getProperty("user.dir") + "//src//main//resources//Test_Data.xlsx";
 
 	public static final String TEST_PIC = System.getProperty("user.dir") + "//src//main//resources//Ring.jpg";
+
+	public static final String CONFIG_FILE = System.getProperty("user.dir")
+			+ "//src//test//resources//Config.properties";
 }
