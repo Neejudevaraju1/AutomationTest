@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-02T12:50:24 IST" name="multibrowser" finished-at="2025-08-02T12:50:31 IST" duration-ms="6812">
+  <suite started-at="2025-08-04T11:18:45 IST" name="multibrowser" finished-at="2025-08-04T11:18:51 IST" duration-ms="5889">
     <groups>
     </groups>
-    <test started-at="2025-08-02T12:50:24 IST" name="chrometest" finished-at="2025-08-02T12:50:29 IST" duration-ms="4586">
+    <test started-at="2025-08-04T11:18:45 IST" name="chrometest" finished-at="2025-08-04T11:18:50 IST" duration-ms="5333">
       <class name="testscript.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@68c9133c]" started-at="2025-08-02T12:50:24 IST" name="beforeMethod" finished-at="2025-08-02T12:50:27 IST" duration-ms="2759" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@dbd8e44]" started-at="2025-08-04T11:18:45 IST" name="beforeMethod" finished-at="2025-08-04T11:18:49 IST" duration-ms="3625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanLoginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@68c9133c]" started-at="2025-08-02T12:50:27 IST" name="verifyUserCanLoginWithValidCredentials" finished-at="2025-08-02T12:50:29 IST" duration-ms="1462" status="PASS">
+        <test-method signature="verifyUserCanLoginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@dbd8e44]" started-at="2025-08-04T11:18:49 IST" name="verifyUserCanLoginWithValidCredentials" finished-at="2025-08-04T11:18:50 IST" duration-ms="1357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginWithValidCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@68c9133c]" started-at="2025-08-02T12:50:29 IST" name="afterMethod" finished-at="2025-08-02T12:50:29 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@dbd8e44]" started-at="2025-08-04T11:18:50 IST" name="afterMethod" finished-at="2025-08-04T11:18:50 IST" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyUserCanLoginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@68c9133c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyUserCanLoginWithValidCredentials()[pri:0, instance:testscript.LoginPageTest@dbd8e44] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,9 +35,9 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.LoginPageTest -->
     </test> <!-- chrometest -->
-    <test started-at="2025-08-02T12:50:24 IST" name="firefox test" finished-at="2025-08-02T12:50:31 IST" duration-ms="6811">
+    <test started-at="2025-08-04T11:18:45 IST" name="firefox test" finished-at="2025-08-04T11:18:51 IST" duration-ms="5889">
       <class name="testscript.HomePageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.HomePageTest@14fc5f04]" started-at="2025-08-02T12:50:24 IST" name="beforeMethod" finished-at="2025-08-02T12:50:29 IST" duration-ms="4980" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.HomePageTest@79d94571]" started-at="2025-08-04T11:18:45 IST" name="beforeMethod" finished-at="2025-08-04T11:18:49 IST" duration-ms="4125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,15 +48,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyThatTheAdminLinkIsClickable()[pri:0, instance:testscript.HomePageTest@14fc5f04]" started-at="2025-08-02T12:50:29 IST" name="verifyThatTheAdminLinkIsClickable" finished-at="2025-08-02T12:50:30 IST" duration-ms="923" status="PASS">
+        <test-method signature="verifyThatTheAdminLinkIsClickable()[pri:0, instance:testscript.HomePageTest@79d94571]" started-at="2025-08-04T11:18:49 IST" name="verifyThatTheAdminLinkIsClickable" finished-at="2025-08-04T11:18:50 IST" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatTheAdminLinkIsClickable -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.HomePageTest@14fc5f04]" started-at="2025-08-02T12:50:30 IST" name="afterMethod" finished-at="2025-08-02T12:50:31 IST" duration-ms="877" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.HomePageTest@79d94571]" started-at="2025-08-04T11:18:50 IST" name="afterMethod" finished-at="2025-08-04T11:18:51 IST" duration-ms="713" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyThatTheAdminLinkIsClickable status=SUCCESS method=HomePageTest.verifyThatTheAdminLinkIsClickable()[pri:0, instance:testscript.HomePageTest@14fc5f04] output={null}]]]>
+                <![CDATA[[TestResult name=verifyThatTheAdminLinkIsClickable status=SUCCESS method=HomePageTest.verifyThatTheAdminLinkIsClickable()[pri:0, instance:testscript.HomePageTest@79d94571] output={null}]]]>
               </value>
             </param>
           </params>

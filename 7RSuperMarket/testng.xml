@@ -7,7 +7,6 @@
 			<class name="testscript.AdminUserPageTest" />
 			<class name="testscript.LoginPageTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+	
+</suite> 
