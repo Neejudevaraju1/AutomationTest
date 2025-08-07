@@ -25,7 +25,7 @@ public class LoginPageTest extends Base {
 		login.loginAsSeepzUser("dennis.vazhappily@portescap.com", "test");
 		login.clickOnLoginButton();
 		boolean actual=login.isAlertIsDisplayed();
-		Assert.assertTrue(actual, "alert is not displayed");
+		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	@Test
@@ -34,7 +34,7 @@ public class LoginPageTest extends Base {
 		login.loginAsSeepzUser("test", "pass");
 		login.clickOnLoginButton();
 		boolean actual=login.isAlertIsDisplayed();
-		Assert.assertTrue(actual, "alert is not displayed");
+		Assert.assertTrue(actual,Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	@Test
@@ -43,6 +43,6 @@ public class LoginPageTest extends Base {
 		login.loginAsSeepzUser("test", "test");
 		login.clickOnLoginButton();
 		boolean actual=login.isAlertIsDisplayed();
-		Assert.assertTrue(actual, "alert is not displayed");
+		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 }
