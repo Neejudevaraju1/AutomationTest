@@ -45,4 +45,37 @@ public class LoginPageTest extends Base {
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
+
+	// check login of public user
+	@Test
+	public void verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials() {
+		LoginPage login = new LoginPage(driver);
+		login.clickOnPublicUser();
+		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "pass");
+		login.clickOnLoginButton();
+		String actual = driver.getTitle();
+		System.out.println(actual);
+		String expected = "RISe Log In Successful";
+		Assert.assertEquals(actual, expected, Constant.ERROR_MESSAGE_UNABLE_TO_LOGIN_WITH_VALID_CREDENTIALS);
+	}
+
+	@Test
+	public void verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials() {
+		LoginPage login = new LoginPage(driver);
+		login.clickOnPublicUser();
+		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "test");
+		login.clickOnLoginButton();
+		boolean actual = login.isAlertIsDisplayed();
+		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
+	}
+
+	@Test
+	public void verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType() {
+		LoginPage login = new LoginPage(driver);
+
+		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "test");
+		login.clickOnLoginButton();
+		boolean actual = login.isAlertIsDisplayed();
+		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
+	}
 }

@@ -36,8 +36,13 @@ public class LoginPage {
 		return this;
 	}
 
-	public LoginPage loginAsPublicUser(String username, String pass) {
+	public LoginPage clickOnPublicUser() {
 		publicUser.click();
+		return this;
+	}
+
+	public LoginPage loginAsPublicUser(String username, String pass) {
+
 		userName.sendKeys(username);
 		password.sendKeys(pass);
 		return this;
