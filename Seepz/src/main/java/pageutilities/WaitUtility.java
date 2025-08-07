@@ -8,15 +8,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtility {
-WebDriver driver;
+	WebDriver driver;
+
 //wait for element to be clicked
-public void WaitForElementToBeClicked(WebDriver driver,WebElement element) {
-	WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(30));
-	wait.until(ExpectedConditions.elementToBeClickable(element));
-}
+	public void WaitForElementToBeClicked(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
 //wait for element to be not empty
-public void waitForFieldToBeNotEmpty(WebDriver driver,WebElement element, String attribute) {
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
-	wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
-}
+	public void waitForFieldToBeNotEmpty(WebDriver driver, WebElement element, String attribute) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
+	}
 }
