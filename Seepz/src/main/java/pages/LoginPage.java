@@ -48,9 +48,10 @@ public class LoginPage {
 		return this;
 	}
 
-	public void clickOnLoginButton() {
+	public ModuleListPage clickOnLoginButton() {
 		utility.waitForFieldToBeNotEmpty(driver, captcha, "value");
 		loginButton.click();
+		return new ModuleListPage(driver);
 	}
 
 	public boolean isAlertIsDisplayed() {

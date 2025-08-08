@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pagestestscript.LoginPageTest">
+      <class name="pagestestscript.ModuleListPageTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyThatTheUserIsAbleToLoginAsSeepzUser"/>
+          <include name="verifyThatTheUserIsAbleToClickOnUnitManagementModule"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- pagestestscript.LoginPageTest -->
+      </class> <!-- pagestestscript.ModuleListPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

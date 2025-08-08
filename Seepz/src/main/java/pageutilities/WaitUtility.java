@@ -2,6 +2,7 @@ package pageutilities;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,5 +21,11 @@ public class WaitUtility {
 	public void waitForFieldToBeNotEmpty(WebDriver driver, WebElement element, String attribute) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
+	}
+
+	// wait for element to be clickable with locator
+	public void waitForElementToBeClickable(WebDriver driver, String locator) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 	}
 }
