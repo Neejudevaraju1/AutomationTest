@@ -1,18 +1,24 @@
 package pagestestscript;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constants.Constant;
 import pages.LoginPage;
+import pageutilities.ExcelUtility;
 
 public class LoginPageTest extends Base {
+	ExcelUtility utility = new ExcelUtility();
 
 	@Test
-	public void verifyThatTheUserIsAbleToLoginAsSeepzUser() {
+	public void verifyThatTheUserIsAbleToLoginAsSeepzUser() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.loginAsSeepzUser("ajeet.bhati@gov.in", "pass");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(1, 0, "login_page");
+		String pass = utility.readStringData(1, 1, "login_page");
+		login.loginAsSeepzUser(userName, pass).clickOnLoginButton();
+
 		String actual = driver.getTitle();
 		System.out.println(actual);
 		String expected = "RISe Log In Successful";
@@ -20,39 +26,42 @@ public class LoginPageTest extends Base {
 	}
 
 	@Test
-	public void verifyThatTheUserIsAbleToLoginAsSeepzUserWithInvalidCredentials() {
+	public void verifyThatTheUserIsAbleToLoginAsSeepzUserWithInvalidCredentials() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.loginAsSeepzUser("dennis.vazhappily@portescap.com", "test");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(2, 0, "login_page");
+		String pass = utility.readStringData(2, 1, "login_page");
+		login.loginAsSeepzUser(userName, pass).clickOnLoginButton();
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	@Test
-	public void verifyThatTheUserIsAbleToLoginWithInvalidUsenameAndValidPassword() {
+	public void verifyThatTheUserIsAbleToLoginWithInvalidUsenameAndValidPassword() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.loginAsSeepzUser("test", "pass");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(3, 0, "login_page");
+		String pass = utility.readStringData(3, 1, "login_page");
+		login.loginAsSeepzUser(userName, pass).clickOnLoginButton();
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	@Test
-	public void verifyThatTheUserIsAbleToLoginWithValidUserNameAndInvalidPassword() {
+	public void verifyThatTheUserIsAbleToLoginWithValidUserNameAndInvalidPassword() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.loginAsSeepzUser("test", "test");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(4, 0, "login_page");
+		String pass = utility.readStringData(4, 1, "login_page");
+		login.loginAsSeepzUser(userName, pass).clickOnLoginButton();
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	// check login of public user
 	@Test
-	public void verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials() {
+	public void verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.clickOnPublicUser();
-		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "pass");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(2, 0, "login_page");
+		String pass = utility.readStringData(2, 1, "login_page");
+		login.clickOnPublicUser().loginAsPublicUser(userName, pass).clickOnLoginButton();
 		String actual = driver.getTitle();
 		System.out.println(actual);
 		String expected = "RISe Log In Successful";
@@ -60,21 +69,21 @@ public class LoginPageTest extends Base {
 	}
 
 	@Test
-	public void verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials() {
+	public void verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials() throws IOException {
 		LoginPage login = new LoginPage(driver);
-		login.clickOnPublicUser();
-		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "test");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(5, 0, "login_page");
+		String pass = utility.readStringData(5, 1, "login_page");
+		login.clickOnPublicUser().loginAsPublicUser(userName, pass).clickOnLoginButton();
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}
 
 	@Test
-	public void verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType() {
+	public void verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType() throws IOException {
 		LoginPage login = new LoginPage(driver);
-
-		login.loginAsPublicUser("dennis.vazhappily@portescap.com", "test");
-		login.clickOnLoginButton();
+		String userName = utility.readStringData(5, 0, "login_page");
+		String pass = utility.readStringData(5, 1, "login_page");
+		login.loginAsPublicUser(userName, pass).clickOnLoginButton();
 		boolean actual = login.isAlertIsDisplayed();
 		Assert.assertTrue(actual, Constant.ERROR_MESSAGE_FOR_LOGIN_WITH_INVALID_CREDENTIAL);
 	}

@@ -22,9 +22,10 @@ public class ModuleListPage {
 	@FindBy(xpath = "//a[@href='/unitmanagement/services/gotoUnitServices']")
 	WebElement link;
 
-	public void clickUnitManagementModule() {
+	public ServicesPage clickUnitManagementModule() {
 		utility.waitForElementToBeClickable(driver, "//a[@href='/seepz/goToModule/UM']");
 		unitManagement.click();
+		return new ServicesPage(driver);
 	}
 
 	public boolean isServicesTabDisplayed() {
