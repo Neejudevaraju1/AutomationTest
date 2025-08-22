@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pagestestscript.MeetingPageTest" class="method navigator-link" hash-for-method="verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime">verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.MeetingPageTest" class="method navigator-link" hash-for-method="verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime">verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.MeetingPageTest" class="method navigator-link" hash-for-method="verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue">verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -143,6 +153,20 @@
                   <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime">
+                  </a> <!-- verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime -->
+                  <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue">
+                  </a> <!-- verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue -->
+                  <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -156,12 +180,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;uac module&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;pagestestscript.MeetingPageTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;verifyThatTheUserIsAbleToInitiateMeetingWithOutDate&quot;/&gt;
           &lt;include name=&quot;verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime&quot;/&gt;
+          &lt;include name=&quot;verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime&quot;/&gt;
+          &lt;include name=&quot;verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- pagestestscript.MeetingPageTest --&gt;
     &lt;/classes&gt;
@@ -203,20 +232,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithOutDate')
+data.setCell(0, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime')
 data.setCell(0, 2, 'pagestestscript.MeetingPageTest')
-data.setCell(0, 3, 8051);
+data.setCell(0, 3, 17722);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime')
+data.setCell(1, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue')
 data.setCell(1, 2, 'pagestestscript.MeetingPageTest')
-data.setCell(1, 3, 7008);
+data.setCell(1, 3, 14544);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithOutDate')
+data.setCell(2, 2, 'pagestestscript.MeetingPageTest')
+data.setCell(2, 3, 10186);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime')
+data.setCell(3, 2, 'pagestestscript.MeetingPageTest')
+data.setCell(3, 3, 8865);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -256,23 +293,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithOutDate</span>
-                <span class="method-start">3642 ms</span>
+                <span class="method-start">3408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToInitiateMeetingWithOutDate status=SUCCESS method=MeetingPa...)</span>
-                <span class="method-start">11698 ms</span>
+                <span class="method-start">13609 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">11705 ms</span>
+                <span class="method-start">13613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime</span>
-                <span class="method-start">14712 ms</span>
+                <span class="method-start">16860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime status=SUCCESS method=Meeti...)</span>
-                <span class="method-start">21742 ms</span>
+                <span class="method-start">34587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">34587 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime</span>
+                <span class="method-start">37487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">46361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime status=SUCCESS method=Meeting...)</span>
+                <span class="method-start">46361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue</span>
+                <span class="method-start">50274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue status=SUCCESS method=MeetingP...)</span>
+                <span class="method-start">64818 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

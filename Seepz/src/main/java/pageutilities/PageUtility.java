@@ -1,5 +1,6 @@
 package pageutilities;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +32,11 @@ public class PageUtility {
 		Select select = new Select(element);
 		select.selectByVisibleText(text);
 	}
-
+//utility to pick the date in meeting tab
+	public void selectDateOfMeeting(WebDriver driver,String day) {
+		WebElement date=driver.findElement(By.xpath("//td[@class='day' and normalize-space(text())='" + day + "']"));
+		date.click();
+	}
 //java script utilities
 	// Scroll into view
 	public void scrollIntoView(WebElement element) {

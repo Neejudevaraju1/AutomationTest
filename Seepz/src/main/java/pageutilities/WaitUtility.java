@@ -28,4 +28,9 @@ public class WaitUtility {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 	}
+
+public void waitForElementToBeLocated(WebDriver driver,String locator) {
+	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+}
 }

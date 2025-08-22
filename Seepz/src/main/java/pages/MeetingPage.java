@@ -11,12 +11,13 @@ import pageutilities.WaitUtility;
 public class MeetingPage {
 	WebDriver driver;
 	WaitUtility utility;
-	PageUtility pageutility = new PageUtility();
+	PageUtility pageutility;
 
 	public MeetingPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		utility = new WaitUtility();
+		pageutility = new PageUtility(driver);
 	}
 
 	@FindBy(id = "meetingtab")
@@ -27,8 +28,8 @@ public class MeetingPage {
 	WebElement title;
 	@FindBy(xpath = "//input[@id='scheduleDate']")
 	WebElement dateField;
-	@FindBy(xpath = "//table[@class=' table-condensed']/tbody/tr/td[@class='day' and text()='23']")
-	WebElement pickdate; // changing xpath
+	@FindBy(xpath = "//table[@class=' table-condensed']")
+	WebElement datepicker; 
 	@FindBy(xpath = "//select[@id='fromTime']")
 	WebElement fromTime;
 	@FindBy(xpath = "//select[@id='toTime']")
@@ -59,10 +60,10 @@ public class MeetingPage {
 		return this;
 	}
 
-	public MeetingPage selectDateOfTheMeeting() {
+	public MeetingPage selectDateOfTheMeeting(String day) {
 		dateField.click();
-		utility.WaitForElementToBeClicked(driver, pickdate);
-		pickdate.click();
+		utility.waitForElementToBeLocated(driver, "//table[@class=' table-condensed']");
+		pageutility.selectDateOfMeeting(driver, day);
 		return this;
 	}
 
@@ -89,16 +90,24 @@ public class MeetingPage {
 	// assertion for no date
 	public boolean isNoDateAlertIsDisplayed() {
 
-		return noDateAlert.isDisplayed();
+		return getalertMessage().contains("Please Enter Date");
 	}
 
 	// assertion for no from time
 	public boolean isNoFromTimeAlertDisplayed() {
-		return noFromTimeALert.isDisplayed();
+		return getalertMessage().contains("Please Enter From Time");
 	}
 
-	public String isalertdisplayed() {
+	public String getalertMessage() {
 		String alert = alertMessage.getText();
 		return alert;
+	}
+	//assertion for no to time
+	public boolean isNoToTimeAlertDisplayed() {
+		return getalertMessage().contains("Please Enter To");
+	}
+	//assertion for no venue
+	public boolean isNoVenueAlertIsDisplayed() {
+		return getalertMessage().contains("Please Enter Venue");
 	}
 }
