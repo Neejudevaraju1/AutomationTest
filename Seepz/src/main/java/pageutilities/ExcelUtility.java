@@ -26,7 +26,7 @@ public class ExcelUtility {
 
 	}
 
-	public static String readIntegerData(int row, int col, String sheet) throws IOException {
+	public static int readIntegerData(int row, int col, String sheet) throws IOException {
 		String filePath = Constant.FILE_PATH;
 		f = new FileInputStream(filePath);
 		w = new XSSFWorkbook(f);
@@ -34,8 +34,8 @@ public class ExcelUtility {
 		XSSFRow r = sh.getRow(row);
 		XSSFCell c = r.getCell(col);
 		int val = (int) c.getNumericCellValue(); // convert double to int using typecasting
-		return String.valueOf(val); // convert int to string using valueOf() method
-		// return val;
+		//return String.valueOf(val); // convert int to string using valueOf() method
+		 return val;
 
 	}
 }

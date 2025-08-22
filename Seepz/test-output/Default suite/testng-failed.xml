@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pagestestscript.ServicesPageTest">
+      <class name="pagestestscript.MeetingPageTest">
         <methods>
           <include name="beforeMethod"/>
+          <include name="verifyThatTheUserIsAbleToCreateMeeting"/>
           <include name="afterMethod"/>
-          <include name="verifyThatUserCanSelectUserCanSelectServiceType"/>
         </methods>
-      </class> <!-- pagestestscript.ServicesPageTest -->
+      </class> <!-- pagestestscript.MeetingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

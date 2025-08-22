@@ -56,7 +56,7 @@ public class Base {
 			sc.captureFailureScreenShot(driver, itestresult.getName());
 		}
 		if (driver != null) {
-			driver.quit();
+			//driver.quit();
 		}
 	}
 }

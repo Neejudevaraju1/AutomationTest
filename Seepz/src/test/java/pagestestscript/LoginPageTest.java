@@ -18,7 +18,6 @@ public class LoginPageTest extends Base {
 		String userName = utility.readStringData(1, 0, "login_page");
 		String pass = utility.readStringData(1, 1, "login_page");
 		login.loginAsSeepzUser(userName, pass).clickOnLoginButton();
-
 		String actual = driver.getTitle();
 		System.out.println(actual);
 		String expected = "RISe Log In Successful";

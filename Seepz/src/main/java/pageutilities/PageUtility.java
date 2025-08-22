@@ -21,6 +21,7 @@ public class PageUtility {
 		select.selectByValue(value);
 	}
 
+
 	public void selectFromDropDown_ByIndex(WebElement element, int index) {
 		Select select = new Select(element);
 		select.selectByIndex(index);

@@ -2,18 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="generatereport.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="opening unit management module in public user(failed)">
+  <test thread-count="5" name="uac module(failed)">
     <classes>
-      <class name="pagestestscript.ModuleListPageTest">
+      <class name="pagestestscript.MeetingPageTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyThatTheUserIsAbleToClickOnUnitManagementModule"/>
+          <include name="verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- pagestestscript.ModuleListPageTest -->
+      </class> <!-- pagestestscript.MeetingPageTest -->
     </classes>
-  </test> <!-- opening unit management module in public user(failed) -->
+  </test> <!-- uac module(failed) -->
 </suite> <!-- Failed suite [Suite] -->

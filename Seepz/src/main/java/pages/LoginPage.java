@@ -49,7 +49,9 @@ public class LoginPage {
 	}
 
 	public ModuleListPage clickOnLoginButton() {
+		captcha.sendKeys("57");
 		utility.waitForFieldToBeNotEmpty(driver, captcha, "value");
+		
 		loginButton.click();
 		return new ModuleListPage(driver);
 	}

@@ -59,6 +59,34 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.22</version>
 		</dependency>
+		<!-- ✅ SLF4J API (mandatory) -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.16</version>
+    </dependency>
+
+    <!-- ✅ Log4j2 core (needed for actual logging) -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.23.1</version>
+    </dependency>
+
+    <!-- ✅ Log4j2 API (already pulled, but keep explicit) -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.23.1</version>
+    </dependency>
+
+    <!-- ✅ SLF4J → Log4j2 bridge -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j2-impl</artifactId>
+        <version>2.23.1</version>
+    </dependency>
+    
 	</dependencies>
 	<build>
 		<plugins>
@@ -78,7 +106,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>UnitUserLogin.xml</suiteXmlFile>
+						<suiteXmlFile>uacmodule.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
