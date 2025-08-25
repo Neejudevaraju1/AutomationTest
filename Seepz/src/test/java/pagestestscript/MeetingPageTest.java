@@ -94,6 +94,7 @@ public class MeetingPageTest extends Base {
 		boolean actual=meeting.isNoToTimeAlertDisplayed();
 		Assert.assertTrue(actual, "no alert message is displayed");
 		String alert=meeting.getalertMessage();
+		
         System.out.println(alert);
 	}
 	@Test
