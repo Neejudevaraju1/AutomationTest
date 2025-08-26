@@ -29,7 +29,7 @@ public class MeetingPage {
 	@FindBy(xpath = "//input[@id='scheduleDate']")
 	WebElement dateField;
 	@FindBy(xpath = "//table[@class=' table-condensed']")
-	WebElement datepicker; 
+	WebElement datepicker;
 	@FindBy(xpath = "//select[@id='fromTime']")
 	WebElement fromTime;
 	@FindBy(xpath = "//select[@id='toTime']")
@@ -44,6 +44,8 @@ public class MeetingPage {
 	WebElement noFromTimeALert;
 	@FindBy(xpath = "//div[@id='alertMain']//li")
 	WebElement alertMessage;
+	@FindBy(xpath = "//div[@id='addbutton-arrow']")
+	WebElement closeButton;
 
 	public MeetingPage clickOnMeetingTab() {
 		meetingTab.click();
@@ -86,6 +88,10 @@ public class MeetingPage {
 		scheduleButton.click();
 		return this;
 	}
+	public MeetingPage clickOnCollapseButton() {
+		closeButton.click();
+		return this;
+	}
 
 	// assertion for no date
 	public boolean isNoDateAlertIsDisplayed() {
@@ -102,11 +108,13 @@ public class MeetingPage {
 		String alert = alertMessage.getText();
 		return alert;
 	}
-	//assertion for no to time
+
+	// assertion for no to time
 	public boolean isNoToTimeAlertDisplayed() {
 		return getalertMessage().contains("Please Enter To");
 	}
-	//assertion for no venue
+
+	// assertion for no venue
 	public boolean isNoVenueAlertIsDisplayed() {
 		return getalertMessage().contains("Please Enter Venue");
 	}
