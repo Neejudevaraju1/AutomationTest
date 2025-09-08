@@ -88,9 +88,9 @@ public class MeetingPage {
 		scheduleButton.click();
 		return this;
 	}
-	public MeetingPage clickOnCollapseButton() {
+	public AddAgenda clickOnCollapseButton() {
 		closeButton.click();
-		return this;
+		return new AddAgenda(driver);
 	}
 
 	// assertion for no date
