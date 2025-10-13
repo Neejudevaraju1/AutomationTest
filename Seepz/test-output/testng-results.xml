@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T17:11:32 IST" name="Suite" finished-at="2025-08-26T17:11:50 IST" duration-ms="17566">
+  <suite started-at="2025-10-08T19:05:42 IST" name="Suite" finished-at="2025-10-08T19:05:58 IST" duration-ms="16186">
     <groups>
     </groups>
-    <test started-at="2025-08-26T17:11:32 IST" name="add agenda" finished-at="2025-08-26T17:11:50 IST" duration-ms="17566">
+    <test started-at="2025-10-08T19:05:42 IST" name="add agenda" finished-at="2025-10-08T19:05:58 IST" duration-ms="16186">
       <class name="pagestestscript.AddAgendaTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-08-26T17:11:32 IST" name="beforeMethod" finished-at="2025-08-26T17:11:35 IST" duration-ms="2954" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-10-08T19:05:42 IST" name="beforeMethod" finished-at="2025-10-08T19:05:44 IST" duration-ms="2657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyThatTheUserIsAbleToAddAgenda()[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-08-26T17:11:35 IST" name="verifyThatTheUserIsAbleToAddAgenda" finished-at="2025-08-26T17:11:50 IST" duration-ms="14558" status="PASS">
+        <test-method signature="verifyThatTheUserIsAbleToAddAgenda()[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-10-08T19:05:44 IST" name="verifyThatTheUserIsAbleToAddAgenda" finished-at="2025-10-08T19:05:58 IST" duration-ms="13471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatTheUserIsAbleToAddAgenda -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-08-26T17:11:50 IST" name="afterMethod" finished-at="2025-08-26T17:11:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pagestestscript.AddAgendaTest@69e308c6]" started-at="2025-10-08T19:05:58 IST" name="afterMethod" finished-at="2025-10-08T19:05:58 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
