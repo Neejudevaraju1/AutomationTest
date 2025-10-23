@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="generatereport.Listeners"></listener>
+	</listeners>
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="adding agenda details">
+		<classes>
+			<class name="pagestestscript.AddAgendaTest"></class>
+			<class name="pagestestscript.Add_Agenda_Details_Test"></class>
+		</classes>
+	</test>
+</suite>

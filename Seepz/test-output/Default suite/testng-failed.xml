@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pagestestscript.MeetingPageTest">
+      <class name="pagestestscript.LoginPageTest">
         <methods>
+          <include name="verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials"/>
+          <include name="verifyThatTheUserIsAbleToLoginWithValidUserNameAndInvalidPassword"/>
+          <include name="verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials"/>
           <include name="beforeMethod"/>
-          <include name="verifyThatTheUserIsAbleToCreateMeeting"/>
+          <include name="verifyThatTheUserIsAbleToLoginAsSeepzUser"/>
+          <include name="verifyThatTheUserIsAbleToLoginAsSeepzUserWithInvalidCredentials"/>
+          <include name="verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType"/>
+          <include name="verifyThatTheUserIsAbleToLoginWithInvalidUsenameAndValidPassword"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- pagestestscript.MeetingPageTest -->
+      </class> <!-- pagestestscript.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -38,6 +38,12 @@ public class AddAgendaTest extends Base {
 		addagenda = meeting.clickOnCollapseButton();
 		addagenda.clickOnCreateAgendaLink().selectAgendaFromList(agenda).selectSEZnameFromList(sezName)
 				.enterSequenceNumber(seqNo).enterUnitName(sezName, eUnitName).clickOnSaveButton().acceptmodal();
+		String agenda2 = ExcelUtility.readStringData(2, 0, "Agenda_Details");
+		String sezName2 = ExcelUtility.readStringData(1, 1, "Agenda_Details");
+		int seqNo2 = ExcelUtility.readIntegerData(1, 4, "Agenda_Details");
+		String eUnitName2 = ExcelUtility.readStringData(1, 3, "Agenda_Details");
+		addagenda.selectAgendaFromList(agenda2).selectSEZnameFromList(sezName2)
+				.enterSequenceNumber(seqNo2).enterUnitName(sezName2, eUnitName2).clickOnSaveButton().acceptmodal();
 
 	}
 }

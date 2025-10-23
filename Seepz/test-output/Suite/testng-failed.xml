@@ -5,15 +5,15 @@
   <listeners>
     <listener class-name="generatereport.Listeners"/>
   </listeners>
-  <test thread-count="5" name="add agenda(failed)">
+  <test thread-count="5" name="adding agenda details(failed)">
     <classes>
-      <class name="pagestestscript.AddAgendaTest">
+      <class name="pagestestscript.Add_Agenda_Details_Test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyThatTheUserIsAbleToAddAgenda"/>
           <include name="afterMethod"/>
+          <include name="verifyThatTheUserIsAbleToAddAgendaDetails"/>
         </methods>
-      </class> <!-- pagestestscript.AddAgendaTest -->
+      </class> <!-- pagestestscript.Add_Agenda_Details_Test -->
     </classes>
-  </test> <!-- add agenda(failed) -->
+  </test> <!-- adding agenda details(failed) -->
 </suite> <!-- Failed suite [Suite] -->
