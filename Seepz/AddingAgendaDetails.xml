@@ -7,7 +7,7 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<test name="adding agenda details">
 		<classes>
-			<class name="pagestestscript.AddAgendaTest"></class>
+			
 			<class name="pagestestscript.Add_Agenda_Details_Test"></class>
 		</classes>
 	</test>

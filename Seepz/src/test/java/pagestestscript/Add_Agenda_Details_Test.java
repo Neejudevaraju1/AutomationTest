@@ -27,5 +27,7 @@ public class Add_Agenda_Details_Test extends Base{
 		meeting = modulelist.clickOnUAC_Module();
 	  addDetails=new Add_Agenda_Details(driver);
 		addDetails.click_On_AgendaApprovalTab().unitNames().clickOnViewIcon("Malabar Gold");
+		addDetails.clickEditDetails();
+		addDetails.addProposalDetails("test");
   }
 }
