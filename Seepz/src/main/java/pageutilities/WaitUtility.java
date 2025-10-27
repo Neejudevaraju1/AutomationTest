@@ -33,8 +33,10 @@ public void waitForElementToBeLocated(WebDriver driver,String locator) {
 	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 }
-public void waitForIframeToBeAvailable(WebDriver driver,WebElement element) {
-	WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(30));
-	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
+public void waitForIframeToBeAvailable(WebDriver driver, By locator) {
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+	driver.switchTo().defaultContent();
 }
+
 }

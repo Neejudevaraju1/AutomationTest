@@ -55,7 +55,11 @@ public class PageUtility {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].value='" + value + "';", element);
 	}
-
+// set input to ckEditor using javaScript
+	public void setInputinCkEditor(WebElement element, String value) {
+		JavascriptExecutor executor=(JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].contentWindow.document.body.innerHTML = arguments[1];", element,value);
+	}
 	// Highlight an element
 	public void highlightElement(WebElement element) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
